@@ -1,0 +1,52 @@
+
+basicColor=#55A8FD;
+//宽高
+wh(width, height) 
+  width width
+  height height
+
+//字体大小，颜色
+sc(size,color) 
+  font-size size !important
+  color color !important
+
+
+// //背景图片地址和大小
+bis(url) 
+  background-image url(url)
+  background-repeat no-repeat
+  background-size 100% 100%
+
+
+// //圆角
+br(radius) 
+  -webkit-border-radius radius
+  -moz-border-radius radius
+  -ms-border-radius radius
+  -o-border-radius radius
+  border-radius radius
+
+
+// //阴影
+bs(x, y, r, color) 
+  -webkit-box-shadow x y r color
+  -moz-box-shadow x y r color
+  -ms-box-shadow x y r color
+  -o-box-shadow x y r color
+  box-shadowx y r color
+
+
+// //单行文本显示详略号
+tf(width= 100%) 
+  width width
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+
+
+// //flex 布局和 子元素 对其方式
+fj(type=space-between) 
+  display flex
+  justify-content type
+  flex-wrap wrap
+
