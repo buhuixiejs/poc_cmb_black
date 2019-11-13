@@ -22,6 +22,31 @@ export default new Router({
       component: () => import("@/views/home")
     },
     {
+      path: "/data",
+      name: "data",
+      meta: {
+        title: "查询"
+      },
+      component: () => import("@/views/data")
+    },
+    {
+      path: "/blacklist",
+      name: "blacklist",
+      meta: {
+        title: "黑名单管理"
+      },
+      component: () => import("@/views/blacklist")
+    },
+    {
+      path: "/organization",
+      name: "organization",
+      meta: {
+        title: "机构管理"
+      },
+      component: () => import("@/views/organization")
+    },
+
+    {
       path: "/user",
       name: "user",
       meta: {
