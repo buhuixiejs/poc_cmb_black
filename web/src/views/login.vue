@@ -1,8 +1,8 @@
 <template>
   <div class="login">
-    <div class="aaa">123</div>
-    <div class="bbb">123</div>
-    <el-button type="primary">123</el-button>
+    <div class="aaa">px</div>
+    <div class="bbb">rem</div>
+    <router-link to="/home">登录</router-link>
   </div>
 </template>
 <script>
@@ -19,10 +19,13 @@ export default {
 <style lang="stylus" scoped>
 .login
   .aaa
-    wh(100px,100px)
+    width 200px
+    height 200px
     border 1px solid #000
+    font-size 40px
   .bbb
-    width 1rem
-    height 1rem
+    width 2rem
+    height 2rem
     border 1px solid red
+    font-size 0.4rem
 </style>
