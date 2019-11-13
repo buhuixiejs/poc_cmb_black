@@ -1,9 +1,9 @@
 import Vue from "vue";
 import App from "@/App.vue";
 import router from "@/router";
+import "@/plugins/element.js";
 import "@/utils/filter";
 import "@/utils/resize";
-import "@/plugins/element.js";
 
 Vue.config.productionTip = false;
 // styles

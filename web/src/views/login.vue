@@ -19,8 +19,7 @@ export default {
 <style lang="stylus" scoped>
 .login
   .aaa
-    width 200px
-    height 200px
+    wh(200px,200px)
     border 1px solid #000
     font-size 40px
   .bbb
