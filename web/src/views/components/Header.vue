@@ -82,7 +82,7 @@ export default {
   .header-right
     fj()
     li
-      color #fff
+      sc(.16rem,#fff)
       span
         line-height .6rem
       &.logout
