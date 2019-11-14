@@ -26,5 +26,5 @@ export default {
     width 2rem
     height 2rem
     border 1px solid red
-    font-size 0.4rem
+    font-size .4rem
 </style>
