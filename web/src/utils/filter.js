@@ -17,3 +17,16 @@ Vue.filter("cutString", function(value, num) {
         string.substring(string.length - num, string.length)
     : string;
 });
+
+// 智能单位（千分位、保留小数、取K等）
+Vue.filter("toThousand", function(value, dec) {
+  if (value === "" || (!value && value !== 0)) return;
+
+  dec = dec === undefined ? 2 : Number(dec);
+  let arr = String(Number(value).toFixed(dec)).split(".");
+  if (dec === 0) {
+    return `${arr[0].replace(/\B(?=(?:\d{3})+\b)/g, ",")}`;
+  } else {
+    return `${arr[0].replace(/\B(?=(?:\d{3})+\b)/g, ",")}.${arr[1] || ""}`;
+  }
+});
